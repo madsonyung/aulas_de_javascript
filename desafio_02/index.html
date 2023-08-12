@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+</head>
+<body>
+
+    <script>
+
+        // desafio identifcar se o triangulo é:
+        // equilátero = tres lados iguais
+        // isósceles = dois lados iguais e um diferente
+        // escaleno = se os tres lados são diferentes
+
+        let a = 1
+        let b = 4
+        let c = 4
+        
+
+        if (a === b && b === c) {
+            console.log (`triangulo equilatero`)
+        }
+
+        if ((a === b & b !== c) || (a === c & c !== b) || (a !== c & b === c)) {
+            console.log (`triangulo isósceles`)
+            
+        }
+        if (a !== b && b !== c && a !== c) {
+            console.log (`triangulo escaleno`)
+
+        }
+
+        // outra forma de validar o triangulo
+
+        const equilatero = a === b && b === c;
+        const isoceles = a === b || a === c || b === c;
+
+        if (equilatero) {
+            console.log ( `é um triangulo equilatero`)
+        }
+
+        if (isoceles && !equilatero) {
+            console.log ( `é um triangulo isoceles`)
+        }
+
+        if (!isoceles && !equilatero) {
+            console.log ( `é um triangulo escaleno`)
+        }
+
+
+
+
+        // validar se é um triangulo
+
+
+
+
+        
+       
+    
+    
+
+
+
+        
+        
+
+
+
+      
+
+
+
+
+    </script>
+    
+</body>
+</html>
