@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio de numero impar</title>
+</head>
+
+<body>
+
+    <script>
+        // identificar e exibir os numeros impares de 0 a 10
+        // usar % e identificar o 1 como impar.
+
+        let contador = 1;
+        const divisor = 2;
+
+        // contador é menor ou igual a 10?
+        while (contador <= 10) {
+            let resto = contador % divisor
+            
+            // para exibir os numeros ímpares
+
+            if (resto === 1) {
+                console.log(`${contador} é impar!`)
+            }
+
+            // para exibir os numeros pares
+
+            if (resto !== 1) {
+                console.log(`${contador} é par!`)
+            }
+            contador = contador + 1;
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
