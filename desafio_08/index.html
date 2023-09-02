@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // desafio: escrever programa que permita ao usuario
+        // gerenciar informações básicas de alunos, como nome, idade e nota.
+
+        let alunos = [
+            {   
+                nome: "madson",
+                idade:45,
+                nota:10
+            },
+                      
+            {
+                nome:"nicolas",
+                idade:8,
+                nota:10
+            },
+
+            {
+                nome: "carlos",
+                idade: 20,
+                nota: 8
+            },
+
+            {
+                nome: "tabosa",
+                idade: 22,
+                nota: 8
+            },
+
+            {
+                nome: "vitoria",
+                idade: 25,
+                nota: 9
+            }
+        ];
+
+        // exibir todas as informações
+
+        for (let index = 0; index < alunos.length; index++) {
+
+            const aluno = alunos [index];
+            
+            console.log (`nome: ${aluno.nome} idade: ${aluno.idade} nota: ${aluno.nota}`);
+            
+        }
+
+        // console.log(alunos);
+
+        // console.log(alunos[0]);
+
+
+    </script>
+    
+</body>
+</html>
