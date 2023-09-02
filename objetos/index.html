@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cliente = {
+            nome: "francisco",
+            email: "franciscowallison@gmail.com",
+            idade: 27,
+            cidade: "",
+            estado: null
+
+        }
+
+        console.log (cliente.nome);
+        console.log(cliente.cidade);
+        console.log(cliente.estado);
+        console.log(cliente.bairro);
+
+        //ternario
+        // condicional => (booleano) ? true:false
+
+        console.log((cliente.cidade === "") ? "cadastro não efetuado!" : cliente.cidade);
+
+        console.log((cliente.estado === null) ? "cadastro não efetuado!" : cliente.estado);
+
+        console.log((typeof cliente.bairro === "undefined") ? "não existe!" : cliente.bairro);
+
+        // atualizando
+
+        cliente.cidade = "fortaleza";
+
+        console.log((cliente.cidade === "") ? "cadastro não efetuado!" : cliente.cidade);
+
+        cliente.estado = "ceara";
+
+        console.log((cliente.estado === null) ? "cadastro não efetuado!" : cliente.estado);
+
+        cliente.bairro = "passaré";
+
+        console.log((typeof cliente.bairro === "undefined") ? "não existe!" : cliente.bairro);
+
+        cliente.telefones = ["55555555", 66666666, null, "9999999999", cliente];
+
+        console.log(cliente.telefones);
+
+    </script>
+    
+</body>
+</html>
