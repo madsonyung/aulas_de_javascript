@@ -16,8 +16,41 @@
         // resposta correta. O objetivo principal é que o usuário forneça o
         // número correto com o menor nÚmero de tentativas possivel.
 
+        // numero aleatorio de 1 a 100
         let ate = (Math.random() *100);
-        const RANDOM = math.floor(ate) +1;
+        const RANDOM = Math.floor(ate) +1;
+
+        let tentativa = 0;
+
+        //função para adivinhar o numero 
+
+        function adivinhar(numero) {
+
+        //  soma do contador  
+            tentativa++
+
+            if (RANDOM > numero) {
+
+                return `seu numero é menor, tente novamente`;
+
+            }
+
+            if (RANDOM < numero) {
+
+               return `seu numero é maior, tente novamente`;
+            }
+
+            if (RANDOM === numero) {
+
+                return `parabens, voce acertou com ${tentativa} tentativas`;
+                
+            }
+           
+        }
+
+        
+
+
 
     </script>
     
