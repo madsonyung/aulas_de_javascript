@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+
+        // minha primeira função
+        function soma(a,b) {
+            return a + b;
+            
+        }
+
+        let x = 20;
+        let y = 30;
+
+        const resultado = soma(x,y);
+
+        console.log (resultado);
+        console.log(typeof resultado);
+
+        // função utilizando const/let
+
+        const letrasMaiusculas = function (texto) {
+            const converte = texto.toUpperCase();
+            return converte;
+        }
+
+        console.log(letrasMaiusculas("madsonyung"));
+
+        // Arrow Function
+
+        const letrasMinusculas = (texto) => {
+            const converte = texto.toLowerCase();
+            return converte;
+
+        }
+
+        console.log(letrasMinusculas("MadsonYung"));
+
+        // Arrow function minificado
+
+        const quantidadeDeLetras = (texto) => texto.length;
+
+        console.log(quantidadeDeLetras ("Mais um teste!"));
+
+        // exemplo 01
+
+        function nomeEmpresaFuncionario(empresa, funcionarios) {
+            for (let index = 0; index < funcionarios.length; index++) {
+                const funcionario = funcionarios[index];
+
+                console.log(empresa, funcionario);                
+            }
+            
+        }
+
+        nomeEmpresaFuncionario("youtube", ["chico", "ana", "thiago"])
+
+
+        // exemplo 2
+
+        function limpaPratos(pia) {
+
+            if (pia.length === 0) {
+                return "Pia Limpa!";
+                
+            }
+
+            console.log(`Louça limpa: ${pia.pop()}`);
+
+            const novaLouca = pia;
+
+            return limpaPratos(novaLouca);
+        }
+
+        const loucas = ["prato1", "p2", "p3", "p4"];
+
+       const resultado_exemplo = limpaPratos(loucas);
+
+        console.log(resultado_exemplo);
+
+        
+
+
+    </script>
+    
+</body>
+</html>
